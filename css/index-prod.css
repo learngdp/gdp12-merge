@@ -1,0 +1,523 @@
+h4 a:link {
+    text-decoration: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#main-div {
+    padding: 5px;
+}
+
+.logo {
+    height: 104px;
+    width: 100px;
+    display: block;
+    margin: 0.5em auto;
+}
+
+#drop-container {
+    padding: 10px;
+    border: #ccc solid 1px;
+    width: 50%;
+    height: 170px;
+    margin: 1em auto;
+}
+
+#drop_zone,
+#paste_zone {
+    border: #bbb dashed 2px;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    color: #bbb;
+    overflow-y: auto;
+}
+
+#drop_zone:hover {
+    border: red dashed 2px;
+}
+
+#fileInput,
+#fileInputMappage {
+    margin: 1em auto;
+    width: 300px;
+}
+
+.infos {
+    width: 50%;
+    margin: 1em auto;
+    height: auto;
+    /*    border: rgba(180, 180, 180, 0.5) solid 1px;*/
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(180, 180, 180, 0.5);
+}
+
+.labelCheckbox {
+    margin: 0.5em 3em;
+}
+
+#message {
+    width: 100%;
+    padding: 2px;
+    max-height: 300px;
+    border-radius: 2px;
+    border: grey dashed 1px;
+}
+
+#loader-div {
+    display: none;
+    margin: 1% auto 0 auto;
+    text-align: center;
+}
+
+.loader {
+    border: #f3f3f3 solid 16px;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    margin: 10% auto 0 auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#mappage-div legend {
+    width: auto;
+    color: rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(231, 235, 245) 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: rgba(255, 255, 255, 0) solid 1px;
+    margin: 1em auto;
+    font-size: 18px;
+}
+
+.toolbar {
+    float: left;
+    margin-left: 2em;
+}
+
+.menu {
+    border: rgba(180, 180, 180, 0.5) solid 0.5px;
+    border-radius: 5px;
+    padding: 1px;
+    display: flex;
+    /*    justify-content: space-between;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-color {
+    background: linear-gradient(to bottom, rgba(196, 210, 245, 1) 1%, rgba(255, 255, 255, 1) 100%);
+    border: #bfbfbf 1px;
+}
+
+.menu-colomns {
+    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(231, 235, 245) 100%);
+    margin: 0 auto 1em auto;
+    padding: 1px;
+    text-align: justify-all;
+}
+
+/* TOOLTIPS AND CUSTOM FOR NETWORK */
+
+#network_div {
+width: 100%;
+height: 500px;
+background: rgba(48, 48, 48, 1);
+border: 1px solid lightgray; /* ridge or groove */
+}
+
+text.tooltip.vis-label {
+    font-size: 12px;
+    text-anchor: middle !important;
+    opacity: 1;
+    /*        writing-mode: tb;*/
+}
+
+div.vis-tooltip {
+  font-size:11px;
+  white-space: normal;
+  max-width: 320px;
+  max-height: 500px;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 65px;
+    height: 30px;
+    padding: 2px;
+    font: 12px sans-serif;
+    /*        background: lightsteelblue;*/
+    background: rgba(247, 248, 224, 1);
+    border-radius: 5px;
+    pointer-events: none;
+    /*pointer-events: all;*/
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+hr {
+    height: 1px;
+    background-color:#555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 95%;
+}
+
+/* DATATABLES
+/*#dataTable-tag_wrapper thead tr th:first-child {
+    padding: 0px;
+}*/
+
+#dataTable-tag_wrapper thead tr th {
+    vertical-align: middle;
+    text-align: center;
+    /*max-width: 50px;*/
+}
+
+#dataTable-tag {
+    width: 95%;
+}
+
+#dataTable-tag_wrapper {
+    margin-left: 12px;
+}
+
+#dataTable-tag_wrapper tfoot tr,
+thead tr {
+    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(231, 235, 245) 100%);
+}
+
+#dataTable-tag thead th {
+    white-space: nowrap;
+}
+
+#dataTable-tag .highlight {
+    font-weight: 500;
+    background-color: whitesmoke !important;
+}
+
+#dataTable-tag td.highlightEleve {
+    font-weight: 900;
+    color: white;
+    background-color: #DC143C !important;
+}
+
+#dataTable-tag tr.duplicate {
+    background-color: #FEBFD2 !important;
+}
+
+.dataTables_length,
+.dataTables_info {
+    margin-left: 3em;
+}
+
+.dataTables_filter {
+    margin-right: 3em;
+}
+
+.dataTables_paginate,
+.paging_simple_numbers,
+#filtreEleve-div,
+#exportCSV-global {
+    margin-right: 2em;
+}
+
+.swal-content {
+    background-color: #E6F5F5;
+    padding: 5px;
+    border: #BED7F5 solid 1px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px;
+    text-align: justify;
+    color: #61534e;
+}
+
+.swal-content h4 {
+    text-align: center;
+}
+
+.sweetalert-lg {
+    width: 800px;
+}
+
+.sweetalert-img {
+    text-align: center;
+    width: 1024px;
+}
+
+.sweetalert-table {
+    text-align: center;
+    width: 1366px;
+}
+
+/*  PIVOT TABLE*/
+
+#pivotTable {
+    text-align: left;
+    margin-left: 1em;
+}
+
+.pvtUi {
+    color: #333;
+}
+
+table.fileHeaders {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.fileHeaders thead tr th {
+    background-color: #F0F5FE;
+    /* #E6EEEE  initial*/
+    border: 1px solid #CDCDCD;
+    font-size: 8pt;
+    padding: 5px;
+    text-align: left;
+}
+
+table.fileHeaders tbody tr td {
+    color: #3D3D3D;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    vertical-align: top;
+    text-align: left;
+}
+
+table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.pvtTable thead tr th:first-child {
+    text-align: right;
+}
+
+table.pvtTable thead tr th {
+    background-color: #F0F5FE;
+    /* #E6EEEE  initial*/
+    border: 1px solid #CDCDCD;
+    font-size: 8pt;
+    padding: 5px;
+    text-align: center;
+}
+
+table.pvtTable tbody tr th {
+    background-color: #F0F5FE;
+    /* #E6EEEE  initial*/
+    border: 1px solid #CDCDCD;
+    font-size: 8pt;
+    padding: 5px;
+    text-align: left;
+}
+
+table.pvtTable .pvtColLabel {
+    text-align: center;
+}
+
+table.pvtTable .pvtTotalLabel {
+    text-align: right;
+}
+
+table.pvtTable tbody tr td:first-child {
+    text-align: right;
+}
+
+table.pvtTable tbody tr td {
+    color: #3D3D3D;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    vertical-align: top;
+    text-align: center;
+}
+
+.pvtTotal,
+.pvtGrandTotal {
+    font-weight: bold;
+}
+
+.pvtVals {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.pvtRowOrder,
+.pvtColOrder {
+    cursor: pointer;
+    width: 15px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.pvtAggregator {
+    margin-bottom: 5px;
+}
+
+.pvtAxisContainer,
+.pvtVals {
+    /*    border: 1px solid gray;*/
+    border: 0.5px solid rgba(180, 180, 180, 0.5);
+    /*    background: rgba(255, 255, 255, 0);*/
+    background: linear-gradient(180deg, rgb(231, 235, 245) 100%, rgb(255, 255, 255) 0%);
+    /*    background: #EEE;*/
+    padding: 5px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.pvtAxisContainer li {
+    padding: 8px 6px;
+    list-style-type: none;
+    cursor: move;
+}
+
+.pvtAxisContainer li.pvtPlaceholder {
+    padding: 3px 15px;
+    border-radius: 5px;
+    border: 1px dashed #aaa;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+    background: #F3F3F3;
+    border: 1px solid #DEDEDE;
+    padding: 2px 5px;
+    white-space: normal;
+    border-radius: 5px;
+}
+
+.pvtTriangle {
+    cursor: pointer;
+    color: grey;
+}
+
+.pvtHorizList li {
+    display: inline;
+}
+
+.pvtVertList {
+    vertical-align: top;
+}
+
+.pvtFilteredAttribute {
+    font-style: italic
+}
+
+.pvtFilterBox {
+    z-index: 100;
+    width: 300px;
+    border: 1px solid gray;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+}
+
+.pvtFilterBox h4 {
+    margin: 15px;
+}
+
+.pvtFilterBox p {
+    margin: 10px auto;
+}
+
+.pvtFilterBox label {
+    font-weight: normal;
+}
+
+.pvtFilterBox input[type='checkbox'] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.pvtFilterBox input[type='text'] {
+    width: 230px;
+}
+
+.pvtFilterBox .count {
+    color: gray;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+.pvtCheckContainer {
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 250px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.pvtCheckContainer p {
+    margin: 5px;
+}
+
+.pvtRendererArea {
+    padding: 5px;
+}
+
+/* Treemaps cahrt*/
+
+text {
+    pointer-events: none;
+}
+
+.grandparent text {
+    font-weight: bold;
+}
+
+rect {
+    fill: none;
+    stroke: #fff;
+}
+
+rect.parent,
+.grandparent rect {
+    stroke-width: 1px;
+}
+
+.grandparent rect {
+    fill: orange;
+}
+
+.grandparent:hover rect {
+    fill: #ee9700;
+}
+
+.children rect.parent,
+.grandparent rect {
+    cursor: pointer;
+}
+
+.children rect.parent {
+    fill: #bbb;
+    fill-opacity: 0.5;
+}
+
+.children:hover rect.child {
+    fill: #bbb;
+}
